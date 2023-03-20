@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 header {
-    height: 80px;
+    background-color: gray;
     /* background-image: url(); */
 }
 
@@ -16,8 +17,28 @@ header {
     margin-left: 15%;
 }
 
-/* Header */
+.btn-large {
+    border-radius: 35px;
+    padding: 15px 30px;
+    font-size: 20px;
+}
 
+.btn-white {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*  Header and nav */
 
 #main-nav {
     display: flex;
@@ -37,8 +58,9 @@ header {
     width: 50%;
 }
 
-.link .link-nav a{
-    margin-left: 10px;
+.link-nav{
+    padding: 10px;
+    font-size: 16px;
 }
 
 .btn {
@@ -56,6 +78,49 @@ header {
     color: black;
     text-decoration: none;
 }
+
+/* Hero */
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 125px;
+}
+
+h1 {
+    font-size: 56px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero-container .text.hero-paragraph {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-cta {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.cta-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
 
 
 /* DEBUG RULES */
@@ -76,4 +141,9 @@ header {
 .menu {
     background-color: azure;
     border: 1px solid black;
+}
+
+.hero-container {
+    background-color: red;
+    border: 2px solid black;
 }
