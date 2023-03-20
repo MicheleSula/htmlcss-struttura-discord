@@ -43,7 +43,10 @@ header {
         color: white;
     }
 
-
+    .btn-azure {
+        background-color: rgb(45, 189, 189);
+        color: white;
+    }
 
 /*  Header and nav */
 
@@ -119,37 +122,92 @@ h1 {
     margin-right: 10px;
 }
 
-/* MAIN */
+/* - - - - MAIN - - - - */
 
-.content-block {
-    width: 70%;
-    margin: 0 15%;
-    background-color: azure;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* Blocchi contenuti dal primo al terzo */
+    .content-block {
+        width: 70%;
+        margin: 0 15%;
+        background-color: azure;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-container {
+        height: 80%;
+        width: 80%;
+        display: flex;
+    }
+
+    .img-block {
+        width: 60%;
+        height: 100%;
+    }
+
+    .text-block {
+        width: 40%;
+        height: 100%;
+    }
+
+    /* Blocco contenuti in verticale */
+
+    .vertical-content-block {
+        width: 70%;
+        margin: 0 15%;
+        background-color: azure;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vertical-content-container {
+        height: 80%;
+        width: 80%;
+    }
+
+    .vertical-img-block {
+        height: 60%;
+        width: 100%;
+    }
+
+    .vertical-text-block {
+        height: 40%;
+        width: 100%;
+    }
+
+    /* Call to action before footer */
+
+    .footer-cta {
+        width: 70%;
+        margin: 0 15%;
+        background-color: azure;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-cta h5 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .footer-cta a {
+        margin-top: 40px;
+     }
+
+
+/* - - - - FOOTER - - - - */
+
+footer {
+    height: 400px;
+    background-color: rgb(56, 52, 52);
+    margin-top: 60px;
 }
-
-.content-container {
-    height: 80%;
-    width: 80%;
-    display: flex;
-}
-
-.img-block {
-    width: 60%;
-    height: 100%;
-}
-
-.text-block {
-    width: 40%;
-    height: 100%;
-}
-
-
-
-
 
 /* DEBUGGING RULES */
 
@@ -192,5 +250,23 @@ header {
 }
 
 .text-block {
+    border: 1px solid black;
+}
+
+/* vertical content */
+
+.vertical-content-block {
+    height: 900px;
+}
+
+.vertical-content-container {
+    background-color: aquamarine;
+}
+
+.vertical-img-block {
+    background-color: bisque;
+    border: 1px solid black;
+}
+.vertical-text-block {
     border: 1px solid black;
 }
