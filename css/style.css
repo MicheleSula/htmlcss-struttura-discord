@@ -65,8 +65,9 @@ header {
     width: 100%;
 }
 
-#logo {
+.logo {
     align-self: center;
+    text-align: left;
 }
 
 .menu {
@@ -242,6 +243,9 @@ footer {
 }
 
 .footer-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 65%;
     height: 50px;
     background-color: antiquewhite;
@@ -259,7 +263,7 @@ header {
 }
 
 /* Header, nav e hero */
-#logo {
+.logo {
     background-color: azure;
 }
 
