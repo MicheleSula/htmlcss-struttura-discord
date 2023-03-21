@@ -17,6 +17,9 @@ header {
     margin: 0 15%;
 }
 
+.content-block:nth-of-type(2n+0) {
+    background-color: lightgray
+}
     /* Regole centralizzate buttons */
     .btn {
         border-radius: 20px;
@@ -50,15 +53,20 @@ header {
 
 /*  Header and nav */
 
+#nav-container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
 #main-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 20px;
+    width: 100%;
 }
 
 #logo {
-    align-self: flex-start;
+    align-self: center;
 }
 
 .menu {
@@ -78,6 +86,10 @@ header {
     background-color: white;
     color: black;
     
+}
+
+.app-btn {
+    display: flex;
 }
 
 
@@ -126,9 +138,7 @@ h1 {
 
     /* Blocchi contenuti dal primo al terzo */
     .content-block {
-        width: 70%;
-        margin: 0 15%;
-        background-color: azure;
+        width: 100%;
         border: 1px solid black;
         display: flex;
         justify-content: center;
@@ -137,7 +147,7 @@ h1 {
 
     .content-container {
         height: 80%;
-        width: 80%;
+        width: 60%;
         display: flex;
     }
 
@@ -154,8 +164,7 @@ h1 {
     /* Blocco contenuti in verticale */
 
     .vertical-content-block {
-        width: 70%;
-        margin: 0 15%;
+        width: 100%;
         background-color: azure;
         border: 1px solid black;
         display: flex;
@@ -165,7 +174,7 @@ h1 {
 
     .vertical-content-container {
         height: 80%;
-        width: 80%;
+        width: 60%;
     }
 
     .vertical-img-block {
